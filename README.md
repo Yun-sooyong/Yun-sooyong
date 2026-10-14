@@ -14,19 +14,24 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 
-<sub>사용 경험: Celery · Redis · PostgreSQL · PyTorch · ONNX Runtime · Ollama · GCP(Cloud Run · Cloud Tasks · Cloud Storage) · GitHub Actions · Flutter</sub>
+<sub>사용 경험: Celery · Redis · PostgreSQL · PyTorch · ONNX Runtime · Ollama · GCP(Cloud Run · Cloud Tasks · Cloud Storage) · GitHub Actions · Flutter · Claude Code</sub>
+
+**AI와 일하는 방식**
+- 구현은 AI와 함께 합니다 — EMPATHO 본인 커밋 275건 중 246건을 Claude Code와 함께 작성했습니다.
+- 무엇을 만들지와 설계 결정, 결과 검증은 직접 합니다 — GPU 메모리 실측, 따로 올린 모델과 비트 단위 비교, 배포 smoke 테스트.
+- AI가 쓴 문장도 근거를 확인합니다 — 화면의 「외부 검증 151장」 표기가 사실이 아님을 찾아 고쳤습니다.
 
 ---
 
 #### 대표 프로젝트
 
 **[EMPATHO](https://github.com/medical-ai-group-3/empatho)** — 유방암 검진 경로 임상의사결정지원시스템 · 팀장 · 5인 · 2026.08–10 · 최종 프로젝트 우수상
-- 판독 서버(FastAPI) 단독 개발: 판독 모델 4종을 한 창구로 묶고, 모든 실패를 HTTP 200 '기권'으로 반환
+- 판독 서버(FastAPI) 설계·구현: 판독 모델 4종을 한 창구로 묶고, 모든 실패를 HTTP 200 '기권'으로 반환
 - MedSAM3 백본 1벌 공유 + 검사별 LoRA 교체: GPU 메모리 13,602 → 4,148 MiB, 결과는 비트 단위 동일
 - LLM 소견문 서버: 수치는 코드가 문장화하고 모델은 문장만 엮음. 숫자가 바뀌면 코드가 만든 문장으로 대체
 - Celery·Redis 판독 파이프라인(gpu·io 큐 분리), SSH 터널, 실패 시 자동 롤백하는 배포
 
-**병리영상 분석 CDSS** — 유방암 병리영상 sTIL 분석 · 백엔드·GCP 인프라 단독 · 5인 · 2026.07
+**병리영상 분석 CDSS** — 유방암 병리영상 sTIL 분석 · 백엔드·GCP 인프라 담당 · 5인 · 2026.07
 - Cloud Tasks + Cloud Run Job 비동기 추론 파이프라인, 작업 상태 5단계
 - 업로드 실패 원인을 영상 151장 측정으로 찾음 (Cloud Run 32MiB 제한) → 서명 URL 직접 업로드로 전환
 - FastAPI + ONNX Runtime 추론 서버, 설정 파일로 모델 추가, Workload Identity 기반 배포 자동화
