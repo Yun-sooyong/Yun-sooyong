@@ -4,7 +4,7 @@
 추론 서버, 비동기 파이프라인, 배포 자동화를 맡아 왔습니다.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-yun--sooyong.github.io-284b63?style=flat-square)](https://yun-sooyong.github.io/)
-[![Notion](https://img.shields.io/badge/Notion-이력·프로젝트_상세-000000?style=flat-square&logo=notion&logoColor=white)](https://app.notion.com/p/yun-sooyong/Portfolio-043bf3e871e1431ca97f3444bd5f3df2)
+[![Notion](https://img.shields.io/badge/Notion-이력·프로젝트_상세-000000?style=flat-square&logo=notion&logoColor=white)](https://yun-sooyong.notion.site/Portfolio-043bf3e871e1431ca97f3444bd5f3df2)
 [![Blog](https://img.shields.io/badge/Blog-학습_노트-84a59d?style=flat-square)](https://yun-sooyong.github.io/blog/)
 [![Email](https://img.shields.io/badge/ysyg22@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:ysyg22@gmail.com)
 
