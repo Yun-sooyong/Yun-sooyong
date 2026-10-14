@@ -17,9 +17,9 @@
 <sub>사용 경험: Celery · Redis · PostgreSQL · PyTorch · ONNX Runtime · Ollama · GCP(Cloud Run · Cloud Tasks · Cloud Storage) · GitHub Actions · Flutter · Claude Code</sub>
 
 **AI와 일하는 방식**
-- 구현은 AI와 함께 합니다 — EMPATHO 본인 커밋 275건 중 246건을 Claude Code와 함께 작성했습니다.
-- 무엇을 만들지와 설계 결정, 결과 검증은 직접 합니다 — GPU 메모리 실측, 따로 올린 모델과 비트 단위 비교, 배포 smoke 테스트.
-- AI가 쓴 문장도 근거를 확인합니다 — 화면의 「외부 검증 151장」 표기가 사실이 아님을 찾아 고쳤습니다.
+- 구현은 AI 도구(Claude Code)와 함께 합니다.
+- 무엇을 만들지와 설계 결정, AI에 맡길 범위는 직접 정합니다.
+- AI가 만든 결과는 측정과 테스트로 확인한 뒤 반영합니다.
 
 ---
 
